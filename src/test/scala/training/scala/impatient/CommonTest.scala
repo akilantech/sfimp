@@ -14,4 +14,9 @@ class CommonTest extends FlatSpec with Matchers {
 
   }
 
+  "Account object "  should "create" in {
+      val account = Account(115)
+      assert( 0 == account.initialBalance)
+  }
+
 }

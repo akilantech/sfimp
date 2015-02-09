@@ -3,7 +3,7 @@ package training.scala.impatient.ch6
 /**
  * Created by akilan on 1/2/15.
  */
-class Account {
+class Account private (val id: Int, val initialBalance: Double)  {
 
 }
 
@@ -15,5 +15,8 @@ object Account {
   def newSequence = { lastNumber = lastNumber + 1
                       lastNumber }
 
+  def apply(amount :Double ) = {
+    new Account(newSequence,amount)
+  }
 
 }
