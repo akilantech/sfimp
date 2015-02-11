@@ -4,19 +4,17 @@ import org.scalatest._
 /**
  * Created by akilan on 1/2/15.
  */
-class CommonTest extends FlatSpec with Matchers {
+class CommonTest extends FunSuite {
 
   import training.scala.impatient.ch6._
 
-  "Account new sequence" should "return" in {
-
-    assert( 1 == Account.newSequence )
-
+  test("Account new sequence")   {
+      assert( 1 == Account.newSequence )
   }
 
-  "Account object "  should "create" in {
+  test("Account object ")  {
       val account = Account(115)
-      assert( 0 == account.initialBalance)
+      assert( 115 == account.initialBalance)
   }
 
 }
