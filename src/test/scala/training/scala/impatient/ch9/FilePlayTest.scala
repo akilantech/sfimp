@@ -17,5 +17,11 @@ class FilePlayTest extends FunSuite {
      assert("arbitrary_content" === filePlay.readTestFile)
    }
 
+  test("read words with 12 length"){
+    val filePlay = new FilePlay()
+    assert(Array("russia","germany") === filePlay.wordsExceedsLength(5,"src/test/resources/words.txt"))
+
+  }
+
 
 }
