@@ -7,11 +7,15 @@ import org.scalatest.FunSuite
  */
 class FilePlayTest extends FunSuite {
 
-   test ("readTestFile") {
+  test ("reverseFileContent"){
+    val filePlay = new FilePlay()
+    assert("tnetnoc_yrartibra" === filePlay.reverseFileContent("src/test/resources/test.txt"))
+  }
 
+  test ("readTestFile") {
      val filePlay = new FilePlay()
-     assert("arbitrary_content" === filePlay.readTªestFile)
-
+     assert("arbitrary_content" === filePlay.readTestFile)
    }
+
 
 }

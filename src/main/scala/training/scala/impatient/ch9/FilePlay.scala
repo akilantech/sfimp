@@ -13,5 +13,10 @@ class FilePlay {
     fileString.mkString
   }
 
+  def reverseFileContent(fileName:String) ={
+    val fileString = Source.fromFile(fileName)
+    fileString.mkString.reverse
+  }
+
 
 }
