@@ -14,5 +14,8 @@ egg.translate(10, -10)
 egg.grow(10, 20)
 
 
+val f : String => String = {case "ping" => "pong" }
+
+
 
 

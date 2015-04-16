@@ -3,7 +3,7 @@ package training.scala.impatient.ch6
 /**
  * Created by akilan on 1/2/15.
  */
-class Account private (val id: Int, val initialBalance: Double)  {
+class Account (val id: Int, val initialBalance: Double)  {
 
 }
 
